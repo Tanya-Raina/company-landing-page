@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import TopSection from './components/TopSection';
+import CardSection from './components/CardSection';
+import LineBreak from './components/LineBreak';
+import VideoSection from './components/VideoSection';
+import CaseStudy from './components/CaseStudy';
+import CallToAction from './components/CallToAction';
+import StatisticsSection from './components/StatisticsSection';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopSection />
+      <CardSection />
+      <LineBreak length={"5%"} />
+      <VideoSection />
+      <StatisticsSection />
+      <CallToAction />
+      <CaseStudy />
     </div>
   );
 }
